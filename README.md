@@ -7,6 +7,7 @@
 Ya! It's playable!
 
 `docker build -t lolcode-snake .`
+
 `docker run -it lolcode-snake`
 
 # why??
