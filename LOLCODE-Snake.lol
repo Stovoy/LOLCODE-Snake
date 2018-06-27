@@ -345,6 +345,9 @@ HOW IZ I user_input
             OMG "d"
                 snake_direction R "east"
                 GTFO
+            OMG "q"
+                FOUND YR WIN
+                GTFO
             OMGWTF
                 valid_input R FAIL
         OIC
@@ -353,7 +356,7 @@ HOW IZ I user_input
             YA RLY
                 GTFO
             NO WAI
-                VISIBLE "wtf! thatz not wasd!!?"
+                VISIBLE "wtf! thatz not wasd!!? (q to kthxbye)"
         OIC
     IM OUTTA YR input_loop
 IF U SAY SO
@@ -433,7 +436,12 @@ IM IN YR game_loop
     I IZ generate_apples MKAY
     I IZ update_board MKAY
     I IZ print_board MKAY
-    I IZ user_input MKAY
+    I HAS A leaving ITZ I IZ user_input MKAY
+    BOTH SAEM leaving AN WIN, O RLY?
+        YA RLY
+            VISIBLE "ok bye ::("
+            GTFO
+    OIC
 
     I HAS A successfully_moved ITZ I IZ try_move_snake MKAY
     BOTH SAEM successfully_moved AN FAIL, O RLY?

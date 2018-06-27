@@ -1,11 +1,14 @@
-# WHAT IZ LOLCODE?
+# What iz lolcode?
 
-[LOL!!!](https://esolangs.org/wiki/LOLCODE)
+[Itz an esoteric programming language, lolcode!!!](https://esolangs.org/wiki/LOLCODE)
 
-# I CAN HAZ SNAKE?
+# I can haz snake?
 
-YA RLY!!
+Ya! It's playable!
 
-# OMG, WHY?
+`docker build -t lolcode-snake .`
+`docker run -it lolcode-snake`
 
-42!
+# why??
+
+it was fun!
