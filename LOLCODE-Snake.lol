@@ -315,16 +315,39 @@ HOW IZ I update_board
 IF U SAY SO
 
 HOW IZ I print_board
+    I HAS A top_line ITZ "/"
+
+    IM IN YR x_loop ...
+    UPPIN YR x TIL BOTH SAEM x AN board_width
+        top_line R SMOOSH top_line AN "--" MKAY
+    IM OUTTA YR x_loop
+
+    top_line R SMOOSH top_line AN "\" MKAY
+
+    VISIBLE top_line
+
     IM IN YR y_loop ...
     UPPIN YR y TIL BOTH SAEM y AN board_height
-        I HAS A line ITZ "| "
+        I HAS A line ITZ "|"
         IM IN YR x_loop ...
         UPPIN YR x TIL BOTH SAEM x AN board_width
             I HAS A key ITZ ":{x},:{y}"
-            line R SMOOSH line AN board'Z SRS key AN " | " MKAY
+            line R SMOOSH line AN board'Z SRS key AN " " MKAY
         IM OUTTA YR x_loop
+        line R SMOOSH line AN "|" MKAY
         VISIBLE line
     IM OUTTA YR y_loop
+
+    I HAS A bottom_line ITZ "\"
+
+    IM IN YR x_loop ...
+    UPPIN YR x TIL BOTH SAEM x AN board_width
+        bottom_line R SMOOSH bottom_line AN "--" MKAY
+    IM OUTTA YR x_loop
+
+    bottom_line R SMOOSH bottom_line AN "/" MKAY
+
+    VISIBLE bottom_line
 IF U SAY SO
 
 HOW IZ I user_input
